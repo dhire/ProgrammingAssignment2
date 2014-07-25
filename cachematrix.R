@@ -1,7 +1,12 @@
+## author: Don Hire
 ## filename: c:\coursera\cachematrix.R 
 ##
 ## creates two functions makeCacheMatrix and cacheSolve
-
+## used to return the inverse of a matrix
+## logic to use a cached solution (inverse of a matrix) is provided
+## in order to increase efficiency 
+##
+##
 ##   function makeCacheMatrix accepts a matrix argument and creates a list containing 4 functions 
 ##    the list created has the follwing 4 elements
 ##          set_matrix - function that assigns a matrix argument to global environment element in_matrix
@@ -28,7 +33,8 @@ matrix_inverse <- NULL
 
 
 ## function cacheSolve returns inverse of matrix
-##  required argument x is element assigned to function makeCacheMatrix
+##  required argument x is list element with items get_invervse and get_matrix 
+##  (see makeCacheMatrix function)
 ##  
 ##  if the matrix inverse does not exist then solve is called to create 
 ##  the inverse matrix which is cached prior to being returned
