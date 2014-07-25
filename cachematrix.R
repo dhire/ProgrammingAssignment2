@@ -48,5 +48,5 @@ matrix_inverse <- x$get_inverse()
 	  matrix_inverse <- solve(data, ...)
         x$set_inverse(matrix_inverse)
         return(matrix_inverse)
-	  
+  
 }
